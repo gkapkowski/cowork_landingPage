@@ -1,1 +1,1 @@
-# CodersLab_FinalProject_LandingPage
+# CodersLab FinalProject: cowork LandingPage
