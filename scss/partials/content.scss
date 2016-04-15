@@ -1,5 +1,8 @@
 section {
-  padding: 50px 0;
+  padding: 25px 0;
+  @media (min-width: 750px) {
+    padding: 50px 0;
+  }
 }
 
 .intro {
@@ -11,7 +14,7 @@ section {
 
 .twelve.columns {
   h3 {
-    color: #ccc;
+    color: $mainGrey;
     text-align: center;
   }
 }
@@ -19,14 +22,22 @@ section {
 .photo-placeholder {
   width: 150px;
   height: 150px;
-  border: 1px solid #ccc;
+  border: 1px solid #CCCCCC;
   margin: 25px auto;
   border-radius: 50%;
   background-image: url("../images/person_placeholder.png");
   background-size: contain;
 }
 
+/*
+picture: person_placeholder.png
+source: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/240px-Blank_woman_placeholder.svg.png
+license: public domain
+license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.svg#filelinks
+*/
+
 .bio {
+  margin-bottom: 25px;
   h5 {
     text-align: center;
   }
@@ -38,12 +49,6 @@ section {
 
 .social-linkedin {
   text-align: right;
-  color: #ccc;
+  color: $mainGrey;
+  padding: 0 15px;
 }
-
-/*
-picture: person_placeholder.png
-source: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/240px-Blank_woman_placeholder.svg.png
-license: public domain
-license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.svg#filelinks
-*/
