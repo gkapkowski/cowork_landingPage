@@ -1,3 +1,7 @@
-h1 {
-color: red;
-}
+// * {
+//   outline: 1px solid black;
+// }
+
+@import "modules/variables";
+@import "partials/header";
+@import "partials/content";

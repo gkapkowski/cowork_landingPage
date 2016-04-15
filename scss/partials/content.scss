@@ -1,32 +1,19 @@
-header {
-  height: 100vh;
-  position: relative;
-  background-image: url("../images/cowork_bg.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-}
-
-/*
-picture: cowork_bg.jpg
-source: https://www.flickr.com/photos/thehub/12913907324
-license: creative commons
-license link: https://creativecommons.org/licenses/by-sa/2.0/
-no changes were made on original picture
-*/
 section {
   padding: 50px 0;
 }
 
-.intro p {
-  padding: 0 50px;
-  text-align: center;
+.intro {
+  p {
+    padding: 0 50px;
+    text-align: center;
+  }
 }
 
-.twelve.columns h3 {
-  color: #ccc;
-  text-align: center;
+.twelve.columns {
+  h3 {
+    color: #ccc;
+    text-align: center;
+  }
 }
 
 .photo-placeholder {
