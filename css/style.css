@@ -39,8 +39,18 @@ section {
   background-size: contain;
 }
 
-.bio {
+.bio h5 {
   text-align: center;
+}
+
+.bio p {
+  padding: 0 15px;
+  text-align: justify;
+}
+
+.social-linkedin {
+  text-align: right;
+  color: #ccc;
 }
 
 /*

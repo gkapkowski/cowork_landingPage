@@ -27,7 +27,18 @@ section {
 }
 
 .bio {
-  text-align: center;
+  h5 {
+    text-align: center;
+  }
+  p {
+    padding: 0 15px;
+    text-align: justify;
+  }
+}
+
+.social-linkedin {
+  text-align: right;
+  color: #ccc;
 }
 
 /*
