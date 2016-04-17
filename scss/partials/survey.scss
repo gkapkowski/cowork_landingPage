@@ -14,13 +14,3 @@
 .submit {
   text-align: right;
 }
-
-
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  background-color: $mainColor;
-  border-color: $mainColor;
-}

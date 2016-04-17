@@ -1,3 +1,27 @@
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: #FF5722;
+  border-color: #FF5722;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #ff4409;
+  border-color: #ff4409;
+}
+
 header {
   height: 100vh;
   position: relative;
@@ -87,15 +111,6 @@ license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.
 
 .submit {
   text-align: right;
-}
-
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  background-color: #FF5722;
-  border-color: #FF5722;
 }
 
 .contact {
