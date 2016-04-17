@@ -28,16 +28,19 @@ no changes were made on original picture
   overflow: hidden;
 }
 
-// .back-image {
-//   width: 960px;
-//   height: 298px;
-//   background-image: url("../images/back-bird.png");
-//   background-repeat: no-repeat;
-//   background-position: top left;
-//   position: absolute;
-//   left: 50%;
-//   margin-left: -480px;
-// }
+.back-image {
+  @media (min-width: 750px) {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/200px-Clock_simple.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    margin-left: 100px;
+    top: 100px;
+    background-color: pink;
+  }
+}
 
 .logo {
   height: 198px;
@@ -51,15 +54,17 @@ no changes were made on original picture
   margin-top: -99px /* half of the height of the image*/
 }
 
-// .fore-image {
-//   background-color: rgba(234, 128, 128, 0.3);
-//   width: 960px;
-//   height: 733px;
-//   background-image: url("../images/fore-bird.png");
-//   background-repeat: no-repeat;
-//   background-position: right bottom;
-//   position: absolute;
-//   left: 50%;
-//   margin-left: -480px;
-//   top: 380px;
-// }
+.fore-image {
+  @media (min-width: 750px) {
+    background-color: rgba(234, 128, 128, 0.3);
+    width: 350px;
+    height: 323px;
+    background-image: url("../images/czlowiek.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: 100px;
+    top: 450px;
+  }
+}

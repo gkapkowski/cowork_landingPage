@@ -47,6 +47,20 @@ no changes were made on original picture
   overflow: hidden;
 }
 
+@media (min-width: 750px) {
+  .back-image {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/200px-Clock_simple.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    margin-left: 100px;
+    top: 100px;
+    background-color: pink;
+  }
+}
+
 .logo {
   height: 198px;
   width: 100%;
@@ -57,6 +71,21 @@ no changes were made on original picture
   position: absolute;
   top: 50%;
   margin-top: -99px;
+}
+
+@media (min-width: 750px) {
+  .fore-image {
+    background-color: rgba(234, 128, 128, 0.3);
+    width: 350px;
+    height: 323px;
+    background-image: url("../images/czlowiek.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    left: 50%;
+    margin-left: 100px;
+    top: 450px;
+  }
 }
 
 section {
