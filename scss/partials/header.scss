@@ -1,12 +1,12 @@
-header {
-  height: 100vh;
-  position: relative;
-  background-image: url("../images/cowork_bg.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-}
+// header {
+//   height: 100vh;
+//   position: relative;
+//   background-image: url("../images/cowork_bg.jpg");
+//   background-size: cover;
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   margin-bottom: 50px;
+// }
 
 
 /*
@@ -16,3 +16,50 @@ license: creative commons
 license link: https://creativecommons.org/licenses/by-sa/2.0/
 no changes were made on original picture
 */
+
+.background-box {
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/cowork_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+// .back-image {
+//   width: 960px;
+//   height: 298px;
+//   background-image: url("../images/back-bird.png");
+//   background-repeat: no-repeat;
+//   background-position: top left;
+//   position: absolute;
+//   left: 50%;
+//   margin-left: -480px;
+// }
+
+.logo {
+  height: 198px;
+  width: 100%;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -99px /* half of the height of the image*/
+}
+
+// .fore-image {
+//   background-color: rgba(234, 128, 128, 0.3);
+//   width: 960px;
+//   height: 733px;
+//   background-image: url("../images/fore-bird.png");
+//   background-repeat: no-repeat;
+//   background-position: right bottom;
+//   position: absolute;
+//   left: 50%;
+//   margin-left: -480px;
+//   top: 380px;
+// }
