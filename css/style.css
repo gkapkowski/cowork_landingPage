@@ -97,3 +97,13 @@ input[type="button"].button-primary {
   background-color: #FF5722;
   border-color: #FF5722;
 }
+
+.contact {
+  text-align: right;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #A2A2A2;
+}
