@@ -79,8 +79,10 @@ license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.
   margin-top: 15px;
 }
 
-.thank-you p {
-  margin-bottom: 4.5rem;
+@media (min-width: 550px) {
+  .thank-you p {
+    margin-bottom: 4.5rem;
+  }
 }
 
 .submit {

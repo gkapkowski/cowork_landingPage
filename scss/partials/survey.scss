@@ -5,7 +5,9 @@
     margin-top: 15px;
   }
   p {
-    margin-bottom: 4.5rem;
+    @media (min-width: 550px) {
+      margin-bottom: 4.5rem;
+    }
   }
 }
 
