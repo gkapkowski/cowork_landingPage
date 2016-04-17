@@ -77,19 +77,99 @@
     <section class="survey">
       <div class="container">
         <div class="twelve columns">
-          <h3>Survey - give us your feedback</h3>
+          <h3>Survey - give us your opinion</h3>
           <hr>
         </div>
-        <form>
+        <form lpformnum="1">
           <div class="row">
-            <div class="six columns">
-              <label></label>
-              <input class="u-full-width" type="email" placeholder="email">
+            <div class="one-half column">
+              <label for="question1">Question 1</label>
+              <input class="u-full-width" type="text" placeholder="Your answer" id="question1" maxlength="150">
             </div>
-            <div class="six columns">
-              <label></label>
-              <input class="u-full-width" type="email" placeholder="email">
+            <div class="one-half column">
+              <label for="question2">Question 2</label>
+              <input class="u-full-width" type="text" placeholder="Your answer" id="question2" maxlength="150">
             </div>
+            <div class="row">
+              <div class="one-half column">
+                <label for="question3">Question 3</label>
+                <input class="u-full-width" type="text" placeholder="Your answer" id="question3" maxlength="150">
+              </div>
+              <div class="one-half column">
+                <label for="question4">Question 4</label>
+                <input class="u-full-width" type="text" placeholder="Your answer" id="question4" maxlength="150">
+              </div>
+          </div>
+          <div class="row">
+            <div class="one-half column">
+              <fieldset>
+                <label>Radio Buttons - question 5</label>
+                <label for="radio1">
+                  <input type="radio" name="radios" id="radio1" value="radio 1" />
+                  <span class="label-body">Option 1 - one of many choices</span>
+                </label>
+                <label for="radio2">
+                  <input type="radio" name="radios" id="radio2" value="radio 2" />
+                  <span class="label-body">Option 2 - one of many choices</span>
+                </label>
+                <label for="radio3">
+                  <input type="radio" name="radios" id="radio3" value="radio 3" />
+                  <span class="label-body">Option 3 - one of many choices</span>
+                </label>
+                <label for="radio4">
+                  <input type="radio" name="radios" id="radio4" value="radio 4" />
+                  <span class="label-body">Option 4 - one of many choices</span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="one-half column">
+               <label for="select1">Select your option</label>
+               <select class="u-full-width" id="select1">
+                 <option value="Option 1">Option 1</option>
+                 <option value="Option 2">Option 2</option>
+                 <option value="Option 3">Option 3</option>
+               </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns thank-you">
+              <h5>Thank you!</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="one column">&nbsp;</div>
+            <div class="ten columns">
+              <label for="additionalInfo">Your additionl suggestions</label>
+              <textarea class="u-full-width"placeholder="Put your suggestions here &hellip;" id="additionalInfo"></textarea>
+            </div>
+            <div class="one column">&nbsp;</div>
+          </div>
+          <div class="row">
+            <div class="one-half column">
+              <label for="name">Name</label>
+              <input class="u-full-width" type="text" placeholder="Your name" id="name" maxlength="30">
+            </div>
+            <div class="one-half column">
+              <label for="email">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns">
+              <label>
+                  <input type="checkbox">
+                  <span class="label-body">I would like to receive updates</span>
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="twelve columns submit">
+              <input class="button-primary" type="submit" value="Submit">
+            </div>
+          </div>
         </form>
       </div>
     </section>

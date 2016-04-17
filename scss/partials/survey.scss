@@ -1,0 +1,24 @@
+.thank-you {
+  text-align: center;
+  h5 {
+    color: $mainGrey;
+    margin-top: 15px;
+  }
+  p {
+    margin-bottom: 4.5rem;
+  }
+}
+
+.submit {
+  text-align: right;
+}
+
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  background-color: $mainColor;
+  border-color: $mainColor;
+}
