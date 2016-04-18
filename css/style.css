@@ -109,7 +109,7 @@ section {
   margin: 25px auto;
   border-radius: 50%;
   background-image: url("../images/person_placeholder.png");
-  background-size: contain;
+  background-size: 102%;
 }
 
 /*

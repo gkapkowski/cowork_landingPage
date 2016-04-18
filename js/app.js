@@ -6,7 +6,7 @@ $(document).ready(function() {
     console.log(windowScroll);
 
     $(".logo").css ({
-      "transform": "translate(0px, "+ windowScroll / 2 + "%)"
+      "transform": "translate(0px, "+ windowScroll / 3 + "%)"
     });
 
     $(".back-image").css ({
