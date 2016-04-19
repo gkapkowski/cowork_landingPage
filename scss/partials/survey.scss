@@ -11,8 +11,10 @@
   }
 }
 
-#error-message {
-  display: none;
+#name-error,
+#email-error {
+  color: $mainColor;
+  margin-bottom: 0;
 }
 
 input:disabled {

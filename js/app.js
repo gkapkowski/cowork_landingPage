@@ -33,23 +33,37 @@ $(document).ready(function() {
     var nameLabel = $("label[for=name]");
     var emailLabel = $("label[for=email]");
 
+    var nameError = $("#name-error");
+    var emailError = $("#email-error");
+
     checkbox.on("change", function () {
       if (checkbox.prop('checked')) {
+
+        isNameValid();
+        isEmailValid();
+
         // enable inpputs and fill in input placeholder
         nameInput.prop("disabled", false);
         nameInput.attr("placeholder", "Your Name");
+        nameLabel.text("Name - required");
 
         emailInput.prop("disabled", false);
         emailInput.attr("placeholder", "Your Email Address");
+        emailLabel.text("Email - required");
       } else {
-        // disable inputs, clear inpput's placeholder and value
+
+        // disable inputs, clear input's placeholder and value
         nameInput.prop("disabled", true);
         nameInput.attr("placeholder", "");
         nameInput.val("");
+        nameLabel.text("Name");
+        nameError.html("&nbsp;");
 
         emailInput.prop("disabled", true);
         emailInput.attr("placeholder", "");
         emailInput.val("");
+        emailLabel.text("Email");
+        emailError.html("&nbsp;");
       }
     });
 
@@ -57,29 +71,37 @@ $(document).ready(function() {
     form.on("submit", function (event) {
       event.preventDefault();
 
-      // inputs value
-      var name = nameInput.val();
-      var email = emailInput.val();
-
-      // validate name and email always
-      isNameValid(name);
-      isEmailValid(email);
-
-      // if checkbox checked make name and email required
-
-
-      // validation functions
-      function isNameValid (name) {
-        if (name.length < 3) {
-          console.log("Imie za krotkie");
-        }
-      }
-
-      function isEmailValid (emailAddress) {
-        var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        console.log(email.length > 0 && emailRegex.test(emailAddress));
+      if (isNameValid && isEmailValid) {
+        console.log("hurra");  
       }
     });
-  }
+
+
+    // validation functions
+    function isNameValid() {
+      nameInput.blur(function () {
+        var name = nameInput.val();
+
+         if (name.length < 3) {
+           nameError.text("Name too short - min. 3 letters");
+         } else {
+           nameError.html("&nbsp;");
+         }
+       });
+     }
+
+    function isEmailValid() {
+      emailInput.blur(function () {
+        var email = emailInput.val();
+        var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        if (! emailRegex.test(email)) {
+          console.log("error");
+          emailError.text("Invalid email address");
+        } else {
+          emailError.html("&nbsp;");
+        }
+      });
+    }
+  } // validateFormOptional()
 
 }); // $(document).ready(function()

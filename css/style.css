@@ -167,8 +167,10 @@ license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.
   }
 }
 
-#error-message {
-  display: none;
+#name-error,
+#email-error {
+  color: #FF5722;
+  margin-bottom: 0;
 }
 
 input:disabled {
