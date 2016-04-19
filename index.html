@@ -159,17 +159,21 @@
           <div class="row">
             <div class="one-half column">
               <label for="name">Name</label>
-              <input class="u-full-width" type="text" placeholder="Your name" id="name" maxlength="30">
+              <input class="u-full-width" type="text" placeholder="" id="name" maxlength="30" data-required="false" disabled>
             </div>
             <div class="one-half column">
               <label for="email">Email</label>
-              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="email">
+              <input class="u-full-width" type="email" placeholder="" id="email" data-required="false" disabled>
             </div>
+          </div>
+          <div class="row" id="error-message">
+            <div class="one-half column name-error">test</div>
+            <div class="one-half column email-error">test</div>
           </div>
           <div class="row">
             <div class="twelve columns">
               <label>
-                  <input type="checkbox">
+                  <input type="checkbox" id="optional">
                   <span class="label-body">I would like to receive updates</span>
                 </label>
             </div>

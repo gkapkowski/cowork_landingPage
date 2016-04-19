@@ -20,6 +20,18 @@ input[type="button"].button-primary:focus {
   border-color: #ff4409;
 }
 
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #FF5722;
+}
+
 a {
   color: #FF5722;
   text-decoration: none;
@@ -153,6 +165,14 @@ license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.
   .thank-you p {
     margin-bottom: 4.5rem;
   }
+}
+
+#error-message {
+  display: none;
+}
+
+input:disabled {
+  background-color: rgba(162, 162, 162, 0.2);
 }
 
 .submit {

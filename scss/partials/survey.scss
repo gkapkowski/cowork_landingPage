@@ -11,6 +11,14 @@
   }
 }
 
+#error-message {
+  display: none;
+}
+
+input:disabled {
+  background-color: transparentize($mainGrey, 0.8);
+}
+
 .submit {
   text-align: right;
 }
