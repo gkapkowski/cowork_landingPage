@@ -51,11 +51,11 @@ $(document).ready(function() {
     var nameError = $("#name-error");
     var emailError = $("#email-error");
 
+    nameInput.on("blur", isNameValid);
+    emailInput.on("blur", isEmailValid);
+
     checkbox.on("change", function () {
       if (checkbox.prop('checked')) {
-
-        isNameValid();
-        isEmailValid();
 
         // enable inpputs and fill in input placeholder
         nameInput.prop("disabled", false);
@@ -65,6 +65,7 @@ $(document).ready(function() {
         emailInput.prop("disabled", false);
         emailInput.attr("placeholder", "Your Email Address");
         emailLabel.text("Email - required");
+
       } else {
 
         // disable inputs, clear input's placeholder and value
@@ -86,37 +87,37 @@ $(document).ready(function() {
     form.on("submit", function (event) {
       event.preventDefault();
 
-      if (isNameValid && isEmailValid) {
+      if (isNameValid() && isEmailValid()) {
         console.log("hurra");
-        setTimeout(function(){ alert("Hello"); }, 3000);
+        // setTimeout(function(){ alert("Hello"); }, 3000); ---> form sent ---> show info
       }
     });
 
 
     // validation functions
     function isNameValid() {
-      nameInput.blur(function () {
-        var name = nameInput.val();
+      var name = nameInput.val();
 
-         if (name.length < 3) {
-           nameError.text("Name too short - min. 3 letters");
-         } else {
-           nameError.html("&nbsp;");
-         }
-       });
-     }
+      if (name.length < 3) {
+        nameError.text("Name too short - min. 3 letters");
+        return false;
+      } else {
+        nameError.html("&nbsp;");
+        return true;
+      }
+    }
 
     function isEmailValid() {
-      emailInput.blur(function () {
-        var email = emailInput.val();
-        var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        if (! emailRegex.test(email)) {
-          console.log("error");
-          emailError.text("Invalid email address");
-        } else {
-          emailError.html("&nbsp;");
-        }
-      });
+      var email = emailInput.val();
+      var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+      if (! emailRegex.test(email)) {
+        emailError.text("Invalid email address");
+        return false;
+      } else {
+        emailError.html("&nbsp;");
+        return true;
+      }
     }
   } // validateFormOptional()
 
