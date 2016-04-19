@@ -46,7 +46,7 @@ picture: cowork_bg.jpg
 source: https://www.flickr.com/photos/thehub/12913907324
 license: creative commons
 license link: https://creativecommons.org/licenses/by-sa/2.0/
-no changes were made on original picture
+original picture was blured
 */
 .background-box {
   position: relative;
@@ -68,7 +68,7 @@ no changes were made on original picture
     background-position: top left;
     position: absolute;
     left: 25px;
-    top: 300px;
+    top: 335px;
   }
 }
 
@@ -125,6 +125,15 @@ section {
   border-radius: 50%;
   background-image: url("../images/person_placeholder.png");
   background-size: 102%;
+  opacity: 0;
+  transform: translateX(-20px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.photo-placeholder.is-visible {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 /*

@@ -1,13 +1,14 @@
 $(document).ready(function() {
 
-  headerParallax();
+  parallax();
   validateFormOptional();
 
-  // Header - Parallax effect
-  function headerParallax() {
+
+  function parallax() {
     $(window).on("scroll", function () {
       var windowScroll = $(this).scrollTop();
 
+  // parallax on header
       $(".logo").css({
         "transform": "translate(0px, "+ windowScroll / 3 + "%)"
       });
@@ -19,8 +20,19 @@ $(document).ready(function() {
       $(".fore-image").css({
         "transform": "translate(0px, -"+ windowScroll / 20 + "%)"
       });
-    });
-  }
+
+  // parallax on team section
+        if (windowScroll > $(".team").offset().top - $(window).height() / 2) {
+          console.log("ok");
+          console.log($(window).height() / 2);
+          $(".photo-placeholder").each(function (i) {
+            setTimeout(function () {
+              $(".photo-placeholder").eq(i).addClass("is-visible");
+            }, 150 * (i + 1));
+          });
+        }
+    }); // window scroll
+  } // parallax
 
 
   // Validate optional form inputs (name, email), when checkbox is checked
@@ -72,7 +84,7 @@ $(document).ready(function() {
       event.preventDefault();
 
       if (isNameValid && isEmailValid) {
-        console.log("hurra");  
+        console.log("hurra");
       }
     });
 
