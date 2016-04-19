@@ -41,13 +41,6 @@ a:hover {
   color: #ff4409;
 }
 
-/*
-picture: cowork_bg.jpg
-source: https://www.flickr.com/photos/thehub/12913907324
-license: creative commons
-license link: https://creativecommons.org/licenses/by-sa/2.0/
-original picture was blured
-*/
 .background-box {
   position: relative;
   height: 100vh;
@@ -59,6 +52,13 @@ original picture was blured
   overflow: hidden;
 }
 
+/*
+picture: cowork_bg.jpg
+source: https://www.flickr.com/photos/thehub/12913907324
+license: creative commons
+license link: https://creativecommons.org/licenses/by-sa/2.0/
+original picture was blured
+*/
 @media (min-width: 750px) {
   .back-image {
     width: 33%;
@@ -72,6 +72,12 @@ original picture was blured
   }
 }
 
+/*
+back_silhouette.png & fore_silhouette.png are sliced from
+original picture: http://www.publicdomainpictures.net/view-image.php?image=147188&picture=business-people
+license: Public Domain
+author: Piotr Siedlecki
+*/
 .logo {
   height: 150px;
   width: 100%;
@@ -141,6 +147,7 @@ picture: person_placeholder.png
 source: https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Blank_woman_placeholder.svg/240px-Blank_woman_placeholder.svg.png
 license: public domain
 license source: https://commons.wikimedia.org/wiki/File:Blank_woman_placeholder.svg#filelinks
+author: Jaqen
 */
 .bio {
   margin-bottom: 25px;

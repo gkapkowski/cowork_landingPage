@@ -1,22 +1,3 @@
-// header {
-//   height: 100vh;
-//   position: relative;
-//   background-image: url("../images/cowork_bg.jpg");
-//   background-size: cover;
-//   background-position: top center;
-//   background-repeat: no-repeat;
-//   margin-bottom: 50px;
-// }
-
-
-/*
-picture: cowork_bg.jpg
-source: https://www.flickr.com/photos/thehub/12913907324
-license: creative commons
-license link: https://creativecommons.org/licenses/by-sa/2.0/
-original picture was blured
-*/
-
 .background-box {
   position: relative;
   height: 100vh;
@@ -27,6 +8,14 @@ original picture was blured
   margin-bottom: 50px;
   overflow: hidden;
 }
+
+/*
+picture: cowork_bg.jpg
+source: https://www.flickr.com/photos/thehub/12913907324
+license: creative commons
+license link: https://creativecommons.org/licenses/by-sa/2.0/
+original picture was blured
+*/
 
 .back-image {
   @media (min-width: 750px) {
@@ -40,6 +29,13 @@ original picture was blured
     top: 335px;
   }
 }
+
+/*
+back_silhouette.png & fore_silhouette.png are sliced from
+original picture: http://www.publicdomainpictures.net/view-image.php?image=147188&picture=business-people
+license: Public Domain
+author: Piotr Siedlecki
+*/
 
 .logo {
   height: 150px;
