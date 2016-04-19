@@ -8,7 +8,7 @@ $(document).ready(function() {
     $(window).on("scroll", function () {
       var windowScroll = $(this).scrollTop();
 
-  // parallax on header
+      // parallax on header
       $(".logo").css({
         "transform": "translate(0px, "+ windowScroll / 3 + "%)"
       });
@@ -21,16 +21,19 @@ $(document).ready(function() {
         "transform": "translate(0px, -"+ windowScroll / 20 + "%)"
       });
 
-  // parallax on team section
-        if (windowScroll > $(".team").offset().top - $(window).height() / 2) {
-          console.log("ok");
-          console.log($(window).height() / 2);
-          $(".photo-placeholder").each(function (i) {
+      // parallax on team section
+      if (windowScroll > $(".team").offset().top - $(window).height() / 2) {
+
+        $(".photo-placeholder").each(function (i) {
+          var self = $(this);
+
+          if (!self.hasClass("is-visible")) {
             setTimeout(function () {
-              $(".photo-placeholder").eq(i).addClass("is-visible");
+              self.addClass("is-visible");
             }, 150 * (i + 1));
-          });
-        }
+          }
+        });
+      }
     }); // window scroll
   } // parallax
 
@@ -85,6 +88,7 @@ $(document).ready(function() {
 
       if (isNameValid && isEmailValid) {
         console.log("hurra");
+        setTimeout(function(){ alert("Hello"); }, 3000);
       }
     });
 
