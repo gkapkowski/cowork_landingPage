@@ -47,15 +47,17 @@ no changes were made on original picture
   overflow: hidden;
 }
 
-.back-image {
-  width: 15%;
-  height: 320px;
-  background-image: url("../images/back_silhouette.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  position: absolute;
-  left: 25px;
-  top: 300px;
+@media (min-width: 750px) {
+  .back-image {
+    width: 33%;
+    height: 320px;
+    background-image: url("../images/back_silhouette.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 25px;
+    top: 300px;
+  }
 }
 
 .logo {
@@ -71,15 +73,16 @@ no changes were made on original picture
   /* half of the height of the image*/
 }
 
-.fore-image {
-  width: 50%;
-  height: 657px;
-  background-image: url("../images/fore_silhouette.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  position: absolute;
-  left: 50%;
-  top: 300px;
+@media (min-width: 750px) {
+  .fore-image {
+    width: 100%;
+    height: 657px;
+    background-image: url("../images/fore_silhouette.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: absolute;
+    top: 300px;
+  }
 }
 
 section {
