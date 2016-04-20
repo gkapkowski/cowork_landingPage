@@ -25,16 +25,6 @@ input:disabled {
   text-align: right;
 }
 
-input[type="submit"] {
-  &.button-primary {
-    &.processing-button {
-      background-color: $mainGrey;
-      border-color: $mainGrey;
-      color: #FFF;
-    }
-  }
-}
-
 %button-form {
   display: none;
   height: 38px;
