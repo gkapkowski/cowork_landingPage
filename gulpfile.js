@@ -19,6 +19,7 @@ gulp.task('serve', ['sass'], function() {
 
     gulp.watch("../cowork_landingPage/scss/**/*.scss", ['sass']);
     gulp.watch("../cowork_landingPage/*.html").on('change', browserSync.reload);
+    gulp.watch("../cowork_landingPage/js/app.js").on('change', browserSync.reload);    
 });
 
 // Compile sass into CSS & auto-inject into browsers

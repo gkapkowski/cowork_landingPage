@@ -37,6 +37,7 @@ input:disabled {
   text-transform: uppercase;
   border-radius: 4px;
   box-sizing: border-box;
+  margin-bottom: 1.5rem;
 }
 
 .processing-button {
@@ -58,5 +59,12 @@ input:disabled {
 
 .is-shown {
   display: block;
-  animation: formButtons 2s 1;
+  animation: fadeIn 2s 1;
+}
+
+input[type=submit] {
+  &.is-hidden {
+  animation: fadeOut 2s 1;
+  display: none !important;
+  }
 }

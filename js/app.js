@@ -87,7 +87,7 @@ $(document).ready(function() {
     form.on("submit", function (event) {
       event.preventDefault();
 
-      if (isNameValid() && isEmailValid()) {
+      if (checkbox.prop('checked') && isNameValid() && isEmailValid()) {
         submitForm();
       }
     });
@@ -120,18 +120,21 @@ $(document).ready(function() {
     }
 
     function submitForm() {
-      // after submiting, when the form is processing
       var processingButton = $(".processing-button");
       var successButton = $(".success-button");
 
-      submitButton.css("display", "none");
-      processingButton.addClass("is-shown");
+      // after submiting, when the form is processing
+      submitButton.fadeOut(1000, function() {
+        processingButton.fadeIn(2000, function() {
 
-      // when processing ends - success information
-      setTimeout(function () {
-        processingButton.removeClass("is-shown");
-        successButton.addClass("is-shown");
-      }, 2000);
+          // when processing ends - success information
+          setTimeout(function () {
+            processingButton.fadeOut(1000, function () {
+              successButton.fadeIn(2000);
+            });
+          }, 2000);
+        });
+      });
     }
 
   } // validateFormOptional()
