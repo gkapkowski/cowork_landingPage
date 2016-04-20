@@ -1,3 +1,21 @@
+@-webkit-keyframes formButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes formButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -197,13 +215,7 @@ input:disabled {
   text-align: right;
 }
 
-input[type="submit"].button-primary.processing-button {
-  background-color: #A2A2A2;
-  border-color: #A2A2A2;
-  color: #FFF;
-}
-
-.success-button, .processing-button {
+.processing-button, .success-button {
   display: none;
   height: 38px;
   padding: 0 30px;
@@ -217,12 +229,6 @@ input[type="submit"].button-primary.processing-button {
   box-sizing: border-box;
 }
 
-.success-button {
-  color: #FFF;
-  background-color: #4CAF50;
-  border: 1px solid #4CAF50;
-}
-
 .processing-button {
   color: #FF5722;
   background-color: transparent;
@@ -231,6 +237,17 @@ input[type="submit"].button-primary.processing-button {
 
 .processing-button i {
   font-size: 1.5em;
+}
+
+.success-button {
+  color: #FFF;
+  background-color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+.is-shown {
+  display: block;
+  animation: formButtons 2s 1;
 }
 
 .contact {

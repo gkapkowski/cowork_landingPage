@@ -120,18 +120,17 @@ $(document).ready(function() {
     }
 
     function submitForm() {
-
       // after submiting, when the form is processing
       var processingButton = $(".processing-button");
       var successButton = $(".success-button");
 
       submitButton.css("display", "none");
-      processingButton.css("display", "block");
+      processingButton.addClass("is-shown");
 
       // when processing ends - success information
       setTimeout(function () {
-        processingButton.css("display", "none");
-        successButton.css("display", "block");
+        processingButton.removeClass("is-shown");
+        successButton.addClass("is-shown");
       }, 2000);
     }
 

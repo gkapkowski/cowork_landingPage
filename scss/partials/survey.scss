@@ -39,13 +39,6 @@ input:disabled {
   box-sizing: border-box;
 }
 
-.success-button {
-  @extend %button-form;
-  color: #FFF;
-  background-color: $successColor;
-  border: 1px solid $successColor;
-}
-
 .processing-button {
   @extend %button-form;
   color: $mainColor;
@@ -54,4 +47,16 @@ input:disabled {
   i {
     font-size: 1.5em;
   }
+}
+
+.success-button {
+  @extend %button-form;
+  color: #FFF;
+  background-color: $successColor;
+  border: 1px solid $successColor;
+}
+
+.is-shown {
+  display: block;
+  animation: formButtons 2s 1;
 }
