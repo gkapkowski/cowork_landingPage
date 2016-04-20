@@ -30,7 +30,7 @@ $(document).ready(function() {
           if (!self.hasClass("is-visible")) {
             setTimeout(function () {
               self.addClass("is-visible");
-            }, 150 * (i + 1));
+            }, 250 * (i + 1));
           }
         }); // each
       }
