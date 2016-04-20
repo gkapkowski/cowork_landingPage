@@ -24,3 +24,44 @@ input:disabled {
 .submit {
   text-align: right;
 }
+
+input[type="submit"] {
+  &.button-primary {
+    &.processing-button {
+      background-color: $mainGrey;
+      border-color: $mainGrey;
+      color: #FFF;
+    }
+  }
+}
+
+%button-form {
+  display: none;
+  height: 38px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.success-button {
+  @extend %button-form;
+  color: #FFF;
+  background-color: $successColor;
+  border: 1px solid $successColor;
+}
+
+.processing-button {
+  @extend %button-form;
+  color: $mainColor;
+  background-color: transparent;
+  border: 1px solid $mainColor;
+  i {
+    font-size: 1.5em;
+  }
+}

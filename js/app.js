@@ -32,7 +32,7 @@ $(document).ready(function() {
               self.addClass("is-visible");
             }, 150 * (i + 1));
           }
-        });
+        }); // each
       }
     }); // window scroll
   } // parallax
@@ -88,8 +88,7 @@ $(document).ready(function() {
       event.preventDefault();
 
       if (isNameValid() && isEmailValid()) {
-        console.log("hurra");
-        // setTimeout(function(){ alert("Hello"); }, 3000); ---> form sent ---> show info
+        submitForm();
       }
     });
 
@@ -119,6 +118,23 @@ $(document).ready(function() {
         return true;
       }
     }
+
+    function submitForm() {
+
+      // after submiting, when the form is processing
+      var processingButton = $(".processing-button");
+      var successButton = $(".success-button");
+
+      submitButton.css("display", "none");
+      processingButton.css("display", "block");
+
+      // when processing ends - success information
+      setTimeout(function () {
+        processingButton.css("display", "none");
+        successButton.css("display", "block");
+      }, 2000);
+    }
+
   } // validateFormOptional()
 
 }); // $(document).ready(function()
