@@ -1,14 +1,18 @@
 .background-box {
   position: relative;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/cowork_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: top center;
   margin-bottom: 50px;
   overflow: hidden;
 }
-
 /*
 picture: cowork_bg.jpg
 source: https://www.flickr.com/photos/thehub/12913907324
