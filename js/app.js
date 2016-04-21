@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $(window).on("resize", function() {
       headerBackground.height($(window).height() + 60);
-    }
+    });
   }
 
   function parallax() {
