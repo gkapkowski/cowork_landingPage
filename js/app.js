@@ -1,22 +1,18 @@
 $(document).ready(function() {
 
-
+  resizeBackground();
   parallax();
   validateFormOptional();
+
 
   // added to prevent background image in header from bumping on mobile
   // more details at:
   // http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
 
-  // TODO: check it
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    var bg = $(".background-box");
-
-      $(window).resize("resizeBackground");
-      function resizeBackground() {
-            bg.height($(window).height());
-      }
-      resizeBackground();
+  function resizeBackground() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      $(".background-box").height($(window).height() + 60);
+    }
   }
 
   function parallax() {
