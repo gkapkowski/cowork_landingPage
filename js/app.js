@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
+  resizeBackgroundForMobile();
   parallax();
   validateFormOptional();
 
+
+  function resizeBackgroundForMobile() {
+    var headerBackground = $(".background-box");
+
+    $(window).on("resize", function() {
+      headerBackground.height($(window).height() + 60);
+    }
+  }
 
   function parallax() {
     $(window).on("scroll", function () {
