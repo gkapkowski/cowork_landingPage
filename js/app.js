@@ -136,12 +136,12 @@ $(document).ready(function() {
 
       // after submiting, when the form is processing
       submitButton.fadeOut(1000, function() {
-        processingButton.fadeIn(2000, function() {
+        processingButton.fadeIn(1000, function() {
 
           // when processing ends - success information
           setTimeout(function () {
             processingButton.fadeOut(1000, function () {
-              successButton.fadeIn(2000);
+              successButton.fadeIn(1000);
             });
           }, 2000);
         });
