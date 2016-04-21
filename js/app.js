@@ -4,8 +4,11 @@ $(document).ready(function() {
   parallax();
   validateFormOptional();
 
-
+  // added to prevent background image in header from bumping on mobile
+  // more details at:
+  // http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
   var bg = $(".background-box");
+  
   $(window).resize("resizeBackground");
   function resizeBackground() {
     bg.height($(window).height());
