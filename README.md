@@ -19,7 +19,7 @@ On this section parallax is used to animate teams' pictures.
 Since precise questions are not known yet, form validation is done only for optional fields, meaning name and email.
 Form/survey design assumption is that a user doesn't have to give it's name or email to submit his opinion.
 
-To test form validation:
+####To test form validation:
 1. Check "I would like to receive updates" checkbox.
 2. Put your name and email, and submit the form.
 
