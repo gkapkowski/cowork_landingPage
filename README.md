@@ -23,7 +23,7 @@ For Development I used:
 
 Site was developed using Chrome desktop Version 50.0.2661.75 (64-bit).
 It works well also on mobile devices (I used Moto X Play 5.5" for development checkups), both on portrait and landscape views.
-Checks were done also on latest versions of desktop Safari and Mozzilla.
+Checks were done also on latest versions of desktop Safari and Firefox.
 
 
 ###Header
