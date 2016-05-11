@@ -1,6 +1,6 @@
 {
   "name": "cowork-landing-page",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/nmkedziora/cowork_landingPage.git"
   },
-  "author": "nmkedziora",
+  "author": "Natalia Kędziora, Grzegorz Kapkowski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nmkedziora/cowork_landingPage/issues"
   },
-  "homepage": "https://github.com/nmkedziora/cowork_landingPage#readme"
+  "homepage": "https://github.com/nmkedziora/cowork_landingPage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.7",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.1"
+  }
 }
